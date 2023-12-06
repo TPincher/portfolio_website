@@ -1,0 +1,236 @@
+@use "./partials/_media-query-mixins";
+@use "./partials/_palette";
+@use "./partials/typography";
+@import "scss/fontawesome.scss";
+@import "scss/brands.scss";
+@import "scss/solid.scss";
+
+* {
+    @include typography.primaryfont;
+}
+
+a {
+    text-decoration: none;
+}
+
+html { 
+    scroll-behavior: smooth
+  }
+
+a:visited {
+    text-decoration: none;
+    color:#0066CC;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.artbar {
+    height: 80px;
+    @include palette.bookend;
+}
+
+#artbar__hamburger-menu {
+    float: right;
+    margin: 5px 20px 5px;
+    border-radius: 10%;
+    color: #ffffff;
+    @include media-query-mixins.medium {
+        display:none;
+    }
+    @include media-query-mixins.large {
+        display:none;
+    } 
+    @include palette.bookend;
+
+    
+}
+
+#artbar__hamburger-menu:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 5px solid black;
+    width: 100%;
+    @include palette.secondary;
+}
+
+.navbar__button {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    border-top: 1px solid black;
+    margin:0px;
+    display: block;
+
+    @include media-query-mixins.medium {
+        display:none;
+    }
+    @include media-query-mixins.large {
+        display:none;
+    }
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Images/jan-canty-wyXdV4kveU4-unsplash.jpg");
+    background-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+
+    @include media-query-mixins.medium {
+        flex-direction: row;
+    }
+}
+
+.intro__div {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__div__para {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.intro__div__para--smaller {
+    mask-image: none;
+}
+
+.top-spacer {
+    height:100px;
+    background: linear-gradient(to bottom, white, #F0ECE5);
+}
+
+
+.main__projects {
+    display: flex;
+    justify-content: center;
+    @include palette.trim;
+}
+
+.projects__photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4%;
+}
+
+.photos__frame {
+    border: 1px solid black;
+}
+
+.photos__splashes {
+    margin: 15px;
+    max-width: 400px;
+    background-color: transparent; 
+}
+
+.bottom-spacer {
+    height:200px;
+    background: linear-gradient(to bottom, #F0ECE5, #31304D);
+}
+
+.skills__skillsbox {
+    display: flex;
+    flex-direction: row;
+    @include palette.primary;
+    color: #ffffff;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.skillsbox__text {
+    width: 50%
+}
+
+.skillsbox__current-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    gap:10px;
+    padding-bottom: 30px;
+}
+
+.skillsbox__future-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    gap:10px;
+}
+
+.skillsbox__spacer {
+    height:200px;
+    background: linear-gradient(to bottom, #31304D, #F0ECE5);
+}
+
+.about-me {
+    background: linear-gradient(to bottom, #F0ECE5, #FFFFFF);
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-link__heading {
+    margin: 0px;
+}
+
+.contact__links {
+    color: #ffffff;
+    margin:0px 50px 5px;
+}
+
+.contact__photo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#TomPhoto {
+    width: 100%;
+    max-width: 400px;
+    border-radius:5%;
+    border: 2px solid black;
+    margin-top: 30px;
+}
+
+.contact__para {
+    text-align: center;
+}
+
+.return-bar {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    @include palette.bookend;
+    color: white;
+    margin-top: 40px;
+}
+
+.spacer {
+    height: 100px;
+}
