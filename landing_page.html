@@ -12,7 +12,11 @@
 <body>
     <main>
         
-        <div class="artbar"> 
+        <div class="artbar">
+                <a href="#projects-link" class="artbar__button--lge">Projects</a>
+                <a href="#skills-link" class="artbar__button--lge">Skills</a>
+                <a href="#about-me-link" class="artbar__button--lge">About Me</a>
+                <a href="#contact-link" class="artbar__button--lge">Contact</a>
             <i class="fa-solid fa-bars fa-4x" id="artbar__hamburger-menu" onclick="hamburger()"></i>
         </div>
         
@@ -34,32 +38,32 @@
 
         <section class="main__projects">
             <a id="projects-link"></a>
-            <div class="projects__photos">
-                <p>I've worked on projects such as...</p>
+            <p class="main__projects__div">I've worked on projects such as...</p>
+                <div class="projects__photos">
                 <div class="photos__frame">
                     <img class="photos__splashes" src="http://placekitten.com/200/200">
                     <h3>Project 1 Description</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
+                    <p class="photos__splashes__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
                 </div>
                 <div class="photos__frame">
                     <img class="photos__splashes" src="http://placekitten.com/200/200">
                     <h3>Project 2 Description</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
+                    <p class="photos__splashes__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
                 </div>
                 <div class="photos__frame">
                     <img class="photos__splashes" src="http://placekitten.com/200/200">
                     <h3>Project 3 Description</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
+                    <p class="photos__splashes__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
                 </div>
                 <div class="photos__frame">
                     <img class="photos__splashes" src="http://placekitten.com/200/200">
                     <h3>Project 4 Description</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
+                    <p class="photos__splashes__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
                 </div>
                 <div class="photos__frame">
                     <img class="photos__splashes" src="http://placekitten.com/200/200">
                     <h3>Project 5 Description</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
+                    <p class="photos__splashes__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facere cupiditate vel ipsum sequi sunt quae eaque iure dolores illo tempora, voluptates quia, deserunt suscipit iste in enim excepturi. Esse.</p>
                 </div>
             </div>
         </section>
@@ -72,18 +76,20 @@
                 <p class="skillsbox__text">I'm proficient in:</p>
                 <p class="skillsbox__text">I'm currently learning:</p>   
             <div class="skillsbox__current-skills">
-                <i class="fa-icon, fa-brands fa-html5 fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-css3-alt fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-sass fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-js fa-4x"></i>
-                <i class="fa-icon, fa-solid fa-database fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-python fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-html5 fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-css3-alt fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-sass fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-js fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-solid fa-database fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-python fa-4x"></i>
             </div>
             <div class="skillsbox__future-skills">
-                <i class="fa-icon, fa-brands fa-square-git fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-java fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-react fa-4x"></i>
-                <i class="fa-icon, fa-brands fa-aws fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-square-git fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-java fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-react fa-4x"></i>
+                <i class="skillsbox__icon fa-icon, fa-brands fa-aws fa-4x"></i>
+                <i class="skillsbox__icon--blank fa-icon, fa-brands fa-4x"></i>
+                <i class="skillsbox__icon--blank fa-icon, fa-brands fa-4x"></i>
             </div>
         </div>
         </section>
@@ -97,11 +103,15 @@
                 <p class="about-me__text__para">I had my first brushes with the tech World while working as a FMCG operations manager. Working with PowerBI 
                     reports got me onto Excel, which led to Python, and then on to SQL.
                 </p>
-                <p class="about-me__text__para">Before long I found myself as the go-to in the team for anything tech related, and before long I decided it was
-                    time to take the plunge and commit to a career change.
+                <p class="about-me__text__para">Before long I found myself as the go-to in the team for anything tech related, and I decided it was
+                    time to plan a career change - a process which took me a little over a year as I finalized my MBA and outstanding work projects.
                 </p>
                 <p class="about-me__text__para">
-                    That process took me a little over a year
+                    During that time, I kept developing my tech skills by taking online courses through Udacity, and I am now working through an entry-
+                    level software engineer program with _nology!
+                </p>
+                <p class="about-me__text__para">
+                    Tech aside, I mostly keep myself sane through sports, whether it be snowboarding, target-shooting or American Football, or travel.
                 </p>
             </div>
         </section>

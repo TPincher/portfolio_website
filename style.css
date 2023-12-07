@@ -10365,6 +10365,20 @@ body {
   height: 80px;
   background-color: #161A30;
 }
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .artbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .artbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 
 #artbar__hamburger-menu {
   float: right;
@@ -10397,6 +10411,22 @@ body {
   background-color: #B6BBC4;
 }
 
+.artbar__button--lge {
+  display: none;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .artbar__button--lge {
+    display: inline;
+    font-size: x-large;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .artbar__button--lge {
+    display: inline;
+    font-size: x-large;
+  }
+}
+
 .navbar__button {
   width: 100%;
   padding: 2%;
@@ -10419,6 +10449,7 @@ body {
 .intro {
   display: flex;
   flex-direction: column;
+  height: 600px;
   background-image: url("./Images/jan-canty-wyXdV4kveU4-unsplash.jpg");
   background-size: cover;
   mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
@@ -10442,9 +10473,19 @@ body {
   text-align: center;
   font-size: xx-large;
 }
+@media only screen and (min-width: 992px) {
+  .intro__div__para {
+    font-size: 60px;
+  }
+}
 
 .intro__div__para--smaller {
   mask-image: none;
+}
+@media only screen and (min-width: 992px) {
+  .intro__div__para--smaller {
+    font-size: 40px;
+  }
 }
 
 .top-spacer {
@@ -10453,21 +10494,42 @@ body {
 }
 
 .main__projects {
-  display: flex;
   justify-content: center;
   background-color: #F0ECE5;
 }
 
+.main__projects__div {
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .main__projects__div {
+    font-size: larger;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main__projects__div {
+    font-size: x-large;
+  }
+}
+
 .projects__photos {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
   padding: 4%;
 }
 
 .photos__frame {
-  border: 1px solid black;
+  border-radius: 3%;
+  max-width: 600px;
+  min-width: 300px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background-color: #B6BBC4;
 }
 
 .photos__splashes {
@@ -10494,6 +10556,16 @@ body {
 .skillsbox__text {
   width: 50%;
 }
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .skillsbox__text {
+    font-size: larger;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .skillsbox__text {
+    font-size: x-large;
+  }
+}
 
 .skillsbox__current-skills {
   display: flex;
@@ -10501,16 +10573,45 @@ body {
   width: 50%;
   height: 500px;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   padding-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .skillsbox__current-skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .skillsbox__future-skills {
   display: flex;
   flex-direction: column;
   width: 50%;
+  height: 500px;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .skillsbox__future-skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .skillsbox__icon {
+    height: 120px;
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .skillsbox__icon--blank {
+    height: 120px;
+    width: 35%;
+  }
 }
 
 .skillsbox__spacer {
@@ -10524,6 +10625,22 @@ body {
   padding-top: 50px;
 }
 
+.about-me__text__para {
+  margin: 40px 25px 40px;
+  font-size: large;
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .about-me__text__para {
+    margin: 40px 100px 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-me__text__para {
+    margin: 60px 300px 40px;
+    font-size: larger;
+  }
+}
+
 .main__contact {
   display: flex;
   flex-direction: column;
@@ -10535,6 +10652,9 @@ body {
 }
 
 .contact__links {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
   color: #ffffff;
   margin: 0px 50px 5px;
 }
@@ -10552,6 +10672,7 @@ body {
   border-radius: 5%;
   border: 2px solid black;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .contact__para {
@@ -10559,12 +10680,13 @@ body {
 }
 
 .return-bar {
-  height: 50px;
+  height: 80px;
   text-align: center;
-  line-height: 50px;
+  line-height: 80px;
   background-color: #161A30;
   color: white;
   margin-top: 40px;
+  font-size: x-large;
 }
 
 .spacer {
