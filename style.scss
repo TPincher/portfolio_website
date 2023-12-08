@@ -1,9 +1,9 @@
 @use "./partials/_media-query-mixins";
 @use "./partials/_palette";
 @use "./partials/typography";
-@import "scss/fontawesome.scss";
-@import "scss/brands.scss";
-@import "scss/solid.scss";
+@import "./scss/fontawesome.scss";
+@import "./scss/brands.scss";
+@import "./scss/solid.scss";
 
 * {
     @include typography.primaryfont;
