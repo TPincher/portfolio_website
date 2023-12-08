@@ -7,4 +7,12 @@ Over the duration of the course it will be iterated over and added to, to showca
 
 ### To-do:
 
-With the basic structure in place, 
+With the first iteration in place, I want to spend some time looking at some professionally built portfolios. Things I have noticed and would like to iplement on the next iteration:
+
+Change the email contact from a mailto: to a form. This seems like a more sensible option, looks cleaner, and can be done in-browser instead of a user having to 
+open their mail client.
+
+Find a better colour palette.
+
+Set the 'return to top' as a constant button, locked to the bottom of the screen.
+
