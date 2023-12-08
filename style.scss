@@ -178,6 +178,7 @@ html {
     border-radius: 3%;
     max-width: 600px;
     min-width: 300px;
+    min-height: 500px;
     margin-bottom: 30px;
     padding: 5px;
     @include palette.secondary;
@@ -185,8 +186,9 @@ html {
 
 .photos__splashes {
     margin: 15px;
+    min-width: 300px;
     max-width: 400px;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .bottom-spacer {
@@ -290,8 +292,12 @@ html {
 
 }
 
-.contact-link__heading {
+.contact-link__heading,
+.about-me__heading {
     margin: 0px;
+    @include media-query-mixins.large {
+        font-size: 30px;
+    }
 }
 
 .contact__links {
@@ -320,6 +326,7 @@ html {
 
 .contact__para {
     text-align: center;
+    font-size: larger;
 }
 
 .return-bar {

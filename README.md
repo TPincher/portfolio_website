@@ -16,3 +16,7 @@ Find a better colour palette.
 
 Set the 'return to top' as a constant button, locked to the bottom of the screen.
 
+Change favicon to something more appropriate
+
+Link Github projects, update image and text as they are completed.
+

@@ -10527,6 +10527,7 @@ body {
   border-radius: 3%;
   max-width: 600px;
   min-width: 300px;
+  min-height: 500px;
   margin-bottom: 30px;
   padding: 5px;
   background-color: #B6BBC4;
@@ -10534,6 +10535,7 @@ body {
 
 .photos__splashes {
   margin: 15px;
+  min-width: 300px;
   max-width: 400px;
   background-color: transparent;
 }
@@ -10647,8 +10649,15 @@ body {
   align-items: center;
 }
 
-.contact-link__heading {
+.contact-link__heading,
+.about-me__heading {
   margin: 0px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-link__heading,
+  .about-me__heading {
+    font-size: 30px;
+  }
 }
 
 .contact__links {
@@ -10677,6 +10686,7 @@ body {
 
 .contact__para {
   text-align: center;
+  font-size: larger;
 }
 
 .return-bar {
