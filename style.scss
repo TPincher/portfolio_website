@@ -1,0 +1,344 @@
+@use "./partials/_media-query-mixins";
+@use "./partials/_palette";
+@use "./partials/_typography";
+@import "./scss/fontawesome.scss";
+@import "./scss/brands.scss";
+@import "./scss/solid.scss";
+
+* {
+    @include typography.primaryfont;
+}
+
+a {
+    text-decoration: none;
+}
+
+html { 
+    scroll-behavior: smooth
+  }
+
+  a:visited {
+      text-decoration: none;
+      color:#0066CC;
+  }
+  
+  body {
+      padding: 0px;
+      margin: 0px;
+    }
+    
+.artbar {
+    height: 80px;
+    @include palette.bookend;
+
+    @include media-query-mixins.medium {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @include media-query-mixins.large {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+#artbar__hamburger-menu {
+    float: right;
+    margin: 5px 20px 5px;
+    border-radius: 10%;
+    color: #ffffff;
+    @include media-query-mixins.medium {
+        display:none;
+    }
+    @include media-query-mixins.large {
+        display:none;
+    } 
+    @include palette.bookend;
+}
+
+#artbar__hamburger-menu:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 5px solid black;
+    width: 100%;
+    @include palette.secondary;
+}
+
+.artbar__button--lge {
+    display: none;
+
+    @include media-query-mixins.medium {
+        display: inline;
+        font-size: x-large;
+    }
+    @include media-query-mixins.large {
+        display: inline;
+        font-size: x-large;
+    }
+
+}
+
+
+.navbar__button {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    border-top: 1px solid black;
+    margin:0px;
+    display: block;
+
+    @include media-query-mixins.medium {
+        display:none;
+    }
+    @include media-query-mixins.large {
+        display:none;
+    }
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-image: url("./Images/jan-canty-wyXdV4kveU4-unsplash.jpg");
+    background-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+
+    @include media-query-mixins.medium {
+        flex-direction: row;
+    }
+}
+
+.intro__div {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__div__para {
+    text-align: center;
+    font-size: xx-large;
+
+    @include media-query-mixins.large {
+        font-size: 60px;
+    }
+}
+
+.intro__div__para--smaller {
+    mask-image: none;
+
+    @include media-query-mixins.large {
+        font-size: 40px;
+    }
+}
+
+.top-spacer {
+    height:100px;
+    background: linear-gradient(to bottom, white, #F0ECE5);
+}
+
+
+.main__projects {
+    justify-content: center;
+    @include palette.trim;
+}
+
+.main__projects__div{
+    text-align: center;
+    margin: 0;
+
+    @include media-query-mixins.medium {
+        font-size:larger;
+    }
+    @include media-query-mixins.large {
+        font-size: x-large;
+    }
+}
+
+.projects__photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 4%;
+}
+
+.photos__frame {
+    border-radius: 3%;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 500px;
+    margin-bottom: 30px;
+    padding: 5px;
+    @include palette.secondary;
+}
+
+.photos__splashes {
+    margin: 15px;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: transparent;
+}
+
+.bottom-spacer {
+    height:200px;
+    background: linear-gradient(to bottom, #F0ECE5, #31304D);
+}
+
+.skills__skillsbox {
+    display: flex;
+    flex-direction: row;
+    @include palette.primary;
+    color: #ffffff;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.skillsbox__text {
+    width: 50%;
+    @include media-query-mixins.medium {
+        font-size:larger;
+    }
+    @include media-query-mixins.large {
+        font-size: x-large;
+    }
+}
+
+.skillsbox__current-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 30px;
+    @include media-query-mixins.large {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.skillsbox__future-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 30px;
+    @include media-query-mixins.large {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.skillsbox__icon {
+    @include media-query-mixins.large {
+        height: 120px;
+        width: 35%;
+    }
+
+    &--blank{
+        @include media-query-mixins.large {
+            height: 120px;
+            width: 35%;
+        }
+    }
+}
+
+.skillsbox__spacer {
+    height:200px;
+    background: linear-gradient(to bottom, #31304D, #F0ECE5);
+}
+
+.about-me {
+    background: linear-gradient(to bottom, #F0ECE5, #FFFFFF);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about-me__text__para {
+    margin: 40px 25px 40px;
+    font-size: large;
+
+    @include media-query-mixins.medium {
+        margin: 40px 100px 40px;
+    }
+    @include media-query-mixins.large {
+        margin: 60px 300px 40px;
+        font-size: larger;
+    }
+}
+
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-link__heading,
+.about-me__heading {
+    margin: 0px;
+    @include media-query-mixins.large {
+        font-size: 30px;
+    }
+}
+
+.contact__links {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    margin:0px 50px 5px;
+}
+
+.contact__photo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#TomPhoto {
+    width: 100%;
+    max-width: 400px;
+    border-radius:5%;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contact__para {
+    text-align: center;
+    font-size: larger;
+}
+
+.return-bar {
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    @include palette.bookend;
+    color: white;
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+.spacer {
+    height: 100px;
+}
